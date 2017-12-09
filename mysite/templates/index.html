@@ -1,0 +1,67 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Глав</title>
+    <meta charset="utf-8">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"/>
+     <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'js/scripts.js.js' %}"></script>
+    </head>
+<body>
+    <div id="block-header">
+    <div id="enter">
+        <a href="{% url 'login' %}">Вход</a>    <a href="{% url 'register' %}">Регистрация</a>
+        
+        
+        </div>
+    <div id="logo"><a href="index.html">Логотип</a></div>
+        <div id="news"> 
+        <ul class="poradok">
+            <li><a href="#">Новое</a></li>
+            <li><a href="#">Популярное</a></li>
+            <li><a href="#">За неделю</a></li>
+            </ul>
+        
+        </div>
+        <div id="search">
+         <form method="POST" action="#" class="search"><input type="text" name="text" value="" placeholder=" искать?" required aligin = "100%" ><input type="submit" name="enter"></form>
+        
+        </div>
+    </div>
+    <div id="block-content">
+        <div id="main-block">
+        <a href="#"><div class="blog">
+            <h3>Первая статья</h3>
+            <p>asdddddddddddddddddwdasdsadadad
+            sadsadsadadsadwadsdsad
+            wadasdadadasdawdwasdawdwas</p>
+            
+            
+            </div></a>
+        <a href="#"><div class="blog">
+            <h3>Вторая статья</h3>
+            <p>asdddddddddddddddddwdasdsadadad
+            sadsadsadadsadwadsdsad
+            wadasdadadasdawdwasdawdwas</p>
+            
+            
+            </div></a>
+        </div>
+    </div>
+   
+    
+    <footer id="footer" class="page-footer"><!--Footer-->
+    <div class="footer-bottom">
+        
+                <p class="pull-left">Новостной блог</p>
+                <p class="pull-right">2017</p>
+        
+    </div>
+</footer>
+ 
+    </body>
+
+
+
+
+</html>
